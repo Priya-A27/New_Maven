@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-jenkins.jproject.SampleTestCase" class="navigator-link">
-              <span class="suite-name border-failed">jenkins.jproject.SampleTestCase</span>
+              <span class="suite-name border-passed">jenkins.jproject.SampleTestCase</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-jenkins.jproject.SampleTestCase" class="hide-methods failed suite-jenkins.jproject.SampleTestCase"> (hide)</a> <!-- hide-methods failed suite-jenkins.jproject.SampleTestCase -->
-                      <a href="#" panel-name="suite-jenkins.jproject.SampleTestCase" class="show-methods failed suite-jenkins.jproject.SampleTestCase"> (show)</a> <!-- show-methods failed suite-jenkins.jproject.SampleTestCase -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-jenkins.jproject.SampleTestCase" class="hide-methods passed suite-jenkins.jproject.SampleTestCase"> (hide)</a> <!-- hide-methods passed suite-jenkins.jproject.SampleTestCase -->
+                      <a href="#" panel-name="suite-jenkins.jproject.SampleTestCase" class="show-methods passed suite-jenkins.jproject.SampleTestCase"> (show)</a> <!-- show-methods passed suite-jenkins.jproject.SampleTestCase -->
                     </span>
-                    <div class="method-list-content failed suite-jenkins.jproject.SampleTestCase">
+                    <div class="method-list-content passed suite-jenkins.jproject.SampleTestCase">
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-jenkins.jproject.SampleTestCase" title="jenkins.jproject.SampleTestCase" class="method navigator-link" hash-for-method="f">f</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-jenkins.jproject.SampleTestCase -->
+                    </div> <!-- method-list-content passed suite-jenkins.jproject.SampleTestCase -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,9 +117,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-jenkins.jproject.SampleTestCase" class="panel jenkins.jproject.SampleTestCase">
-          <div class="suite-jenkins.jproject.SampleTestCase-class-failed">
+          <div class="suite-jenkins.jproject.SampleTestCase-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">jenkins.jproject.SampleTestCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -128,65 +128,10 @@
                   <a name="f">
                   </a> <!-- f -->
                   <span class="method-name">f</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 77
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-JECC7QJ&apos;, ip: &apos;192.168.0.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.4&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00C1EB13+1501971]
-	Ordinal0 [0x00B9F6D1+980689]
-	Ordinal0 [0x00B2765F+489055]
-	Ordinal0 [0x00ABF2F4+62196]
-	Ordinal0 [0x00ABBCDA+48346]
-	Ordinal0 [0x00AD9800+169984]
-	Ordinal0 [0x00AD942D+169005]
-	Ordinal0 [0x00AD78EB+162027]
-	Ordinal0 [0x00AC0AC7+68295]
-	Ordinal0 [0x00AC1B40+72512]
-	Ordinal0 [0x00AC1AD9+72409]
-	Ordinal0 [0x00BB8F37+1085239]
-	GetHandleVerifier [0x00CBD7ED+503293]
-	GetHandleVerifier [0x00CBD580+502672]
-	GetHandleVerifier [0x00CC46AC+531644]
-	GetHandleVerifier [0x00CBDFFA+505354]
-	Ordinal0 [0x00BB0606+1050118]
-	Ordinal0 [0x00BB047F+1049727]
-	Ordinal0 [0x00BBAF9B+1093531]
-	Ordinal0 [0x00BBB103+1093891]
-	Ordinal0 [0x00BBA095+1089685]
-	BaseThreadInitThunk [0x76136359+25]
-	RtlGetAppContainerNamedObjectPath [0x77367B74+228]
-	RtlGetAppContainerNamedObjectPath [0x77367B44+180]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at jenkins.jproject.SampleTestCase.f(SampleTestCase.java:13)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-jenkins.jproject.SampleTestCase-class-failed -->
+          </div> <!-- suite-jenkins.jproject.SampleTestCase-class-passed -->
         </div> <!-- panel jenkins.jproject.SampleTestCase -->
         <div panel-name="test-xml-jenkins.jproject.SampleTestCase" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -242,12 +187,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'f')
 data.setCell(0, 2, 'jenkins.jproject.SampleTestCase')
-data.setCell(0, 3, 15559);
+data.setCell(0, 3, 9538);
 window.suiteTableData['jenkins.jproject.SampleTestCase']= { tableData: data, tableDiv: 'times-div-jenkins.jproject.SampleTestCase'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-jenkins.jproject.SampleTestCase">
               </div> <!-- times-div-jenkins.jproject.SampleTestCase -->
             </div> <!-- times-div -->
@@ -275,8 +220,6 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">jenkins.jproject.SampleTestCase</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">f</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
